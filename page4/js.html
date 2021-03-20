@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript</title>
+    <!--Favicon of website-->
+    <link rel="icon" type="image/png" href="../images/favicon.ico">
+    <!--Latest compiled and minified CSS from Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!--Personal CSS file-->
+    <link rel="stylesheet" href="../style.css">
+    <!--Font imported from google.fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--The following nav bar was sourced from https://getbootstrap.com/, with alterations made to it-->
+    <!-- Navigation Bar -->
+    <div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand nav-hover nav-font" href="../index.html"><img src="../images/logo.png" alt="" width="55" height="55">web.dev-learn</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link nav-font nav-hover" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-hover nav-font" href="../page2/html.html">HTML</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-hover nav-font" href="../page3/css.html">CSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-font active nav-hover" href="../page4/js.html">JavaScript</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="nav-item dropdown name">
+                    <a class="nav-link dropdown-toggle nav-hover nav-font text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learn more about webdev</a>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                      <li><h5 class="font-weight-bold nav-font text-light dropdown-header">Useful Resources</h5></li>
+                      <div class="dropdown-divider"></div>
+                      <li><a target="_blank" class="dropdown-item text-light nav-font" href="https://www.w3schools.com/">W3 Schools</a></li>
+                      <li><a target="_blank" class="dropdown-item text-light nav-font" href="https://hackerthemes.com/bootstrap-cheatsheet/">BootStrap Cheatsheet</a></li>
+                      <li><a target="_blank" class="dropdown-item text-light nav-font" href="https://www.freepik.com/home">Free HD Vectors</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <!--The header was created using the container class from https://getbootstrap.com/.-->
+    <!--Header, Sub-Header, Functional Button, Image -->
+    <div class="container-fluid gradient text-center"><br><br><br><br>
+        <h1 class="display-4 header">JavaScript</h1>
+        <h4 class="header text-light">&lt the language for designing interactive web pages &gt</h4><br>
+        <!--JavaScript feature from script.js-->
+        <button type="button" id="js-button" class="nav-font shadow nav-hover btn btn-dark">Click here!</button>
+        <img class="img-hover vector rounded" src="../images/js-vec.png" alt="js vector">
+        <br><br>
+    </div>
+
+    <!--Body of website-->
+    <div class="container-fluid gradient">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="display-4 m-3 header ">What is JavaScript?</h2><hr>
+          <h3 class="display-5 m-3 header">Definition</h3>
+          <p class="m-3 text-light paragraphs">JavaScript is a programming language that allows you to implement complex items on web pages - every time a web page does more than just show you static information - showing content that updates over a period of time, interactive maps or graphics Animated 2D / 3D, etc. - you can bet that JavaScript is probably involved.</p><hr>
+          <h3 class="display-5 m-3 header">Brief History</h3>
+          <p class="m-3 text-light paragraphs">JavaScript was created in the 1990s by Brendan Eich at the service of Netscape. This decade was a period of revolution, as browsers were still static. The most popular browser at that time was Mosaic, by NCSA. Netscape concluded that the web would have to become more dynamic, as the Navigator always had to make a request to the server to get a response in the browser. In 1995, Netscape hired Brendan Eich to create a language that would provide that.<br><br>Even with “Javanese” syntax and other characteristics of Java (primitive values and objects), <u>JavaScript</u> from the beginning suffered the functional influence of Scheme, and later of languages like Self (prototypes), Perl and Python (Strings, arrays and regular expressions). In late November 1995, version 2.0B3 of the Navigator came out with the “ten-day” version without much change. In early December 1995, Java was at its peak and the language was renamed to JavaScript.<br><br> After JavaScript was created, Microsoft created, in August 1996, an identical language to be used in Internet Explorer 3. To contain Microsoft's ambition, Netscape decided to standardize the language through the organization ECMA International, a company that was specialized standards and norms. Work on the ECMA-262 standard began in November 1996. The name JavaScript was already patented by Sun Microsystems (now Oracle) and could not be used. Therefore, the name composed of ECMA and JavaScript was used, resulting in ECMAScript.<br><br> Even with that name, the language is still affectionately known by JavaScript to this day. ECMAScript is only used to refer to language versions.</p><hr>
+          <h3 class="display-5 m-3 header">JavaScript Versions</h3>
+          <h4 class="display-7 m-3">ECMAScript 1 - 1997</h4>
+          <p class="m-3 text-light paragraphs">The first version (“ten days”).</p><hr>
+          <h4 class="display-7 m-3">ECMAScript 2 - 1998</h4>
+          <p class="m-3 text-light paragraphs">Editorial changes to align the ECMA-262 with the ISO / IEC 16262 standard.</p><hr>
+          <h4 class="display-7 m-3">ECMAScript 3 - 1999</h4>
+          <p class="m-3 text-light paragraphs">It was in this version that JavaScript gained important implementations such as do-while, regular expressions, new methods for the string object, exception handling, among other things.
+          </p><hr>
+          <h4 class="display-7 m-3">ECMAScript 4 - 2008</h4>
+          <p class="m-3 text-light paragraphs">ECMAScript 4 was developed to be the new version of JavaScript with a prototype written in ML. However, TC39 rejected the prototype because of its new implementations. The amount of new features would make the migration from ECMAScript 3 to 4 very disruptive.</p><hr>
+          <h4 class="display-7 m-3">ECMAScript 5 - 2009</h4>
+          <p class="m-3 text-light paragraphs">Strict mode ('use strict'), getters and setters, new array methods, JSON support, among other things. This is the incremental update agreed upon at the close of ECMAScript 4.</p><hr>
+          <h4 class="display-7 m-3">ECMAScript 5.1 - 2011</h4>
+          <p class="m-3 text-light paragraphs">Editorial changes to align the ECMA-262 with the third version of the ISO / IEC 16262: 2011 standard.</p><hr>
+          <h4 class="display-7 m-3">ECMAScript 6 - 2015</h4>
+          <p class="m-3 text-light paragraphs">Also known as ECMAScript 2015, it is the first phase of the Harmony version. It includes much leaner syntax and features like arrow functions, binary data, typed arrays, collections (maps, sets and weak maps), promises, improvements in numerals and math, reflection, and proxies.</p><hr>
+          <h4 class="display-7 m-3">ECMAScript 2016</h4>
+          <p class="m-3 text-light paragraphs">It includes features such as exponential operators and the Array.prototype.includes method. Some browsers do not yet fully support ECMAScript versions 6 and 7. However, it is possible to transpile to ECMAScript 5 through libraries such as Babel or Polyfills.</p><hr>
+          <h4 class="display-7 m-3">ECMAScript 2017</h4>
+          <p class="m-3 text-light paragraphs">Added string padding, Object.entries, Object.values, async functions and shared memory.</p><hr>
+          <h4 class="display-7 m-3">ECMAScript 2018 (current)</h4>
+          <p class="m-3 text-light paragraphs">Added rest/spread properties, asynchronous iteration, Promise.finally() and additions to RegExp.</p><hr>
+          <h4 class="display-6 m-3 header">JavaScript Benefits</h4>
+          <ul class="m-3 text-light paragraphs">
+            <li>Since the very beginning, JavaScript has brought <u>user interface interactivity </u>to the web. It now does the same for applications of all kind, helping to develop the most engaging UX. Today, frameworks like Vue.js are bringing transitions & animations to the next level.</li><br>
+            <li>Client-side execution of the logic brings <u>faster user experiences</u>. With the code running directly in the browser, the need for server calls is abstracted, hence a cut in loading times. Even with the presence of a server, the fact that JS is asynchronous means that it’s able to communicate with the server in the background without interrupting the user interaction taking place in the frontend.</li><br>
+            <li>JavaScript is behind any <u>good responsive web design</u>. More and more, developers need to adapt their design across multiple browsers and devices. Combining HTML5, CSS3 & JavaScript, they can do so within a single codebase.</li><br>
+            <li>For developers, JS is <u>easy to learn</u> and fast to get into active development. Its syntax is easy and flexible for newcomers. It also simplifies the development of complex applications by enabling developers to simplify the app’s composition. The many frameworks & packages out there also ease the life of developers to some extent.</li><br>
+            <li>If you haven’t got this yet, JavaScript is <u>insanely popular</u>. If popularity doesn’t always equal quality in life in general, it at least mean one important thing: you’ll find the solution to any problem within the community. In web development, that’s not a negligible detail. If you’re someone that needs to hire developers, that’s also a big plus, as the pool of candidates is huge.</li>
+          </ul><hr>
+          <h4 class="display-6 m-3 header">JavaScript Potential Drawbacks</h4>
+          <ul class="text-light m-3 paragraphs">
+            <li>It’s not clear, even to this day, at which extent search engines can crawl JavaScript. Even though Google claims it mostly does, you shouldn’t take any chance if you don’t want to face <u>crawlability/SEO issues</u>. This problem isn’t without a solution as there are ways to handle JavaScript in a way that crawlers see it.</li><br>
+            <li>There’s something as too much JavaScript. Bloating your projects with JS will do you a disservice in the long term as it will eventually cause <u>performance issues</u>. The way to avoid this is to insert JavaScript only when necessary and not shoehorn it everywhere like we might tend to do.</li><br>
+            <li>The thousands of packages that constitute the JS ecosystem allow developers to work quickly without reinventing the wheel for each new task. However, they also cause what some have called <u>“dependency hell.”</u> You need to learn how to deal with these often necessary dependencies, so they don’t become a hassle for you and the people using your projects.</li>
+          </ul><hr>
+          <h3 class="display-5 m-3 header">Declaring JavaScript Functions</h3>
+          <p class="text-light m-3 paragraphs">A function created with a function declaration is a Function object and has all the properties, methods and behaviors of Function objects. By default, functions return undefined. To return any other value, the function must have a return statement that specifies the return value.<br><br>Functions can receive <u>arguments</u>, they go inside of the brackets (arguments). Remember when we talked about a magic box that received 2 numbers and returned the sum of them? This function would look like this <pre>
+            <code>
+              function sum (x,y){
+                return x + y;
+              }
+            </code>
+          </pre>
+          </p><hr>
+          <h3 class="display-5 m-3 header">Invoking JavaScript Functions</h3>
+          <p class="text-light m-3 paragraphs">After building the box, it does nothing by itself until we call it. The invocation consists of putting the name of the function followed by the parentheses. This causes the code within the body of our function to be executed. <pre>
+            <code>
+              sum (3,5);
+            </code>
+          </pre>
+          </p>
+        </div>
+        
+
+        <!--Right Side of Body-->
+        <div class="col-sm-6">
+          <h2 class="display-4 m-3 header">Fundamentals</h2><hr>
+          <h3 class="display-5 m-3 header">What is a Script?</h3>
+          <p class="text-light m-3 paragraphs"> In computer programming, a script is a program or sequence of instructions that is interpreted or carried out by another program rather than by the computer processor (as a compiled program is).In the context of the World Wide Web, Perl, VBScript, and similar script languages are often written to handle forms input or other services for a Web site and are processed on the Web server. A JavaScript script in a Web page runs "client-side" on the Web browser.<br><br>In general, script languages are easier and faster to code in than the more structured and compiled languages such as C and C++. However, a script takes longer to run than a compiled program since each instruction is being handled by another program first (requiring additional instructions) rather than directly by the basic instruction processor.</p><hr>
+          <h3 class="display-5 m-3 header">Internal JavaScript</h3>
+            <p class=" text-light m-3 paragraphs">Internal JavaScript is inserted into your page in a similar way to CSS. While CSS uses the &ltlink&gt element to apply external style sheets and the &ltstyle&gt element to apply internal style sheets, JavaScript only needs one friend in the HTML world - the &ltscript&gt element.</p>
+            <img class="img-center w-75 rounded shadow nav-hover" src="../images/js-internal.png" alt="css-structure"><br>
+            <p class="text-light text-center paragraphs">Typical Internal JavaScript Structure</p><hr>
+              <h3 class="display-5 m-3 header">External JavaScript</h3>
+              <p class=" text-light m-3 paragraphs">This way is very similar to the insertion of JavaScript internal codes, the biggest difference is that the JavaScript code is not placed inside the tag, since this code will be in an external file. Thus, the <u>'src'</u> attribute of the &ltscript&gt tag is simply filled in with the path to the file in question.<br><br> This form also allows you to load JavaScript files without having to download them for your project. This is widely used as a way to get files that are used by many projects, such as jQuery, to be cached, and then loaded faster.
+              </p>
+              <img class="img-center w-75 rounded shadow nav-hover" src="../images/js-external.png" alt="ext-js"><br>
+              <p class="text-light text-center paragraphs">Typical External JavaScript Structure</p><hr>
+              <h3 class="display-5 m-3 header">JavaScript Variables</h3>
+              <p class="text-light m-3 paragraphs">To create a variable, the <u>var</u> command is used and, to determine its value, the assignment operator (=). To facilitate the understanding of the code, a name must always be chosen that identifies the type of data to be stored. Always remember that variables are case-sensitive, which means that capitalized names are different from lowercase names: for a JavaScript program, Name is different from name.</p>
+              <h3 class=" display-6 header m-3">Types of Variables</h3>
+              <ul class="text-light paragraphs m-3">
+                <li>Int - Variables with integer values.</li><br>
+                <li>Float - Variables with floating point or decimal places.</li><br>
+                <li>String - Text variables, usually called a "character string". Values of this type are assigned using double quotes (") or single quotes (') as a delimiter.</li><br>
+                <li>Booleans - Data type with two values: "true" or "false".</li><br>
+                <li>Arrays - An array references several spaces in memory. It is a set of values and / or variables organized by index (which can be an integer or string value). Understanding this type is very important.</li><br>
+                <li>Objects - Objects are like a kind of "super variables" that store a "collection of values" referenced by name, and that can be retrieved for use in several other parts of a program. In JavaScript almost any type of data is an object. Each item in this "collection of values" is called a property. Each property consists of a "name: value" pair. When a property stores a function, it becomes what we call a method.</li>
+              </ul><hr>
+              <h3 class="display-5 m-3 header">JavaScript Operators</h3>
+              <h3 class=" display-6 header m-3">Arithmetic Operators</h3>
+              <p class="text-light m-3 paragraphs">For basic mathematical operations, the following are used, addition (+), subtraction (-), multiplication (*) and division (/).</p>
+              <img class="img-center w-75 rounded shadow nav-hover" src="../images/js-math.png" alt="ext-js"><hr>
+              <h3 class=" display-6 header m-3">Relational Operators</h3>
+              <p class="text-light m-3 paragraphs">These are operators that test for a relationship (such as "less-than" or "property-of") between two values and return true or false depending on whether that relationship exists.</p>
+              <img class="img-center w-75 rounded shadow nav-hover" src="../images/js-relation.png" alt="ext-js"><hr>
+              <h3 class=" display-6 header m-3">Logical Operators</h3>
+              <p class="text-light m-3 paragraphs">Logical operators are normally used with expressions that return true or false, however if used with non-Boolean values the return will be non-Boolean.</p>
+              <img class="img-center w-75 rounded shadow nav-hover" src="../images/js-logic.png" alt="ext-js"><hr>
+              <h3 class="display-5 m-3 header">JavaScript Functions</h3>
+              <p class="text-light m-3 paragraphs">Initially, think of functions like magic boxes: you throw things in, something happens and you get back a transformation of what has been placed. For example: imagine a box in which you put two numbers: 3 and 5 and the box returns you 8. The numbers 3 and 5 that we put in the box we will call <u>arguments</u> and the 8 that we receive, we will call <u>return</u>.<br><br> A function will not always have arguments and will not always have a return, but it will certainly do something of interest to us, be it changing the color of an element, opening a popup window, or any of the other things that the JavaScript language can do.<br><br> Programming languages already have some pre-defined functions to help us. From the JavaScript language we can quote: open () (used to open popup windows), parseInt () (used to convert a number or string to an integer), encodeURI () (encodes a string into a valid URI) ...</p><hr>
+              <h3 class="display-5 m-3 header">Returning JavaScript Functions</h3>
+              <p class="text-light m-3 paragraphs">After building the function and invoking it, we still don't get the result. Because we don't direct the return anywhere. <pre>
+                <code>
+                  &ltp id="result"&gt
+
+                  &ltscript&gt
+                  alert(sum(3,5));
+                  document.getElementById('result').innerHTML = sum(3,5);
+                  &lt/script&gt
+                </code>
+              </pre>
+              </p>
+        </div>
+      </div>
+    </div> 
+
+    <!--The following footer was sourced from https://mdbootstrap.com/docs/standard/navigation/footer/, with some alterations made to it-->
+    <!-- Footer -->
+    <footer class="gradient text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-dark" target="_blank" href="https://github.com/danrleimartins">Danrlei Martins</a>
+      </div>
+    </footer>
+
+    <!--Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!--Personal JS file-->
+    <script src="../script.js"></script>
+</body>
+</html>

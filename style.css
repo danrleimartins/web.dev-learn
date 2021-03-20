@@ -1,0 +1,74 @@
+.nav-font{
+    font-family: 'Poiret One', cursive;
+    font-size: large;
+}
+
+.gradient{  
+    background: linear-gradient(to right, #1565C0, #b92b27); 
+}
+
+.header{
+    font-family: 'Poiret One', cursive;
+}
+
+#img-head{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.img-hover:hover{
+    transition: transform 1s;
+    transform: scale(0.9);
+}
+
+.nav-hover:hover {
+    transition: transform .5s;
+    transform: scale(1.1);   
+}
+
+.header:hover{
+    transition: transform 2s;
+    transform: translate(10px, 10px); 
+}
+
+.img-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 15px;
+}
+.vector{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 15px;
+}
+
+.video-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+.paragraphs{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    font-size: large;
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+pre, code, .code {
+    font-style: italic;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.694);
+}
+
+#js-button{
+    text-transform:capitalize;
+    text-align: center;   
+}

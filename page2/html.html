@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML</title>
+    <!--Favicon of website-->
+    <link rel="icon" type="image/png" href="../images/favicon.ico">
+    <!--Latest compiled and minified CSS from Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!--Personal CSS file-->
+    <link rel="stylesheet" href="../style.css">
+    <!--Font imported from google.fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!--The following nav bar was sourced from https://getbootstrap.com/, with alterations made to it-->
+    <!-- Navigation Bar -->
+    <div>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand nav-font nav-hover" href="index.html"><img src="../images/logo.png" alt="" width="55" height="55">web.dev-learn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link nav-font nav-hover" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active nav-font nav-hover" href="../page2/html.html">HTML</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-font nav-hover" href="../page3/css.html">CSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-font nav-hover" href="../page4/js.html">JavaScript</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="nav-item dropdown name">
+                    <a class="nav-link dropdown-toggle nav-hover nav-font text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learn more about webdev</a>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                      <li><h5 class="font-weight-bold nav-font text-light dropdown-header">Useful Resources</h5></li>
+                      <div class="dropdown-divider"></div>
+                      <li><a target="_blank" class="dropdown-item text-light nav-font" href="https://www.w3schools.com/">W3 Schools</a></li>
+                      <li><a target="_blank" class="dropdown-item text-light nav-font" href="https://hackerthemes.com/bootstrap-cheatsheet/">BootStrap Cheatsheet</a></li>
+                      <li><a target="_blank" class="dropdown-item text-light nav-font" href="https://www.freepik.com/home">Free HD Vectors</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+  </div>
+
+    <!--The header was created using the container class from https://getbootstrap.com/-->
+    <!--Header, Sub-Header, Image -->
+    <div class="container-fluid gradient text-center"><br><br><br><br>
+        <h1 class="display-4 header">Hypertext Markup Language</h1>
+        <h4 class="header text-light">&lt the language for structuring web pages &gt</h4>
+        <img class="vector rounded img-hover" src="../images/html-vec.png" alt="html vector">
+    </div>
+
+    <!--The body of the website was designed using containers classes from https://getbootstrap.com/-->
+    <!--Body of website-->
+    <div class="container-fluid gradient">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="display-4 m-3 header ">What is HTML?</h2><hr>
+          <h3 class="display-5 m-3 header">Definition</h3>
+          <p class="m-3 text-light paragraphs">HTML, short for Hypertext Markup Language is the name of that language responsible for giving the basic structure and the content of a webpage. Hypertext is text that contains hyperlinks, which in turn are those parts of a document which readers can click on to take them to a different document, using the link. You have all seen the blue underlined parts of a text, in not-so-good-looking web pages. This is a local <a class="text-dark" href="../index.html">hyperlink</a> that takes you back to the home page. We can also have external <a class="text-dark" target="_blank" href="https://www.google.ie/">hyperlinks</a>, this one takes you to the Google homepage. </p><hr>
+          <h3 class="display-5 m-3 header">Brief History</h3>
+          <p class="m-3 text-light paragraphs">HTML was created in 1991, by Tim Berners-Lee, at <a class="text-dark" href="https://home.cern/">CERN</a> (European Council for Nuclear Research) in Switzerland. Initially, HTML was designed to connect nearby research institutions and share documents with ease. In 1992, the development library WWW (World Wide Web), a worldwide network, was released, which together with HTML provided the worldwide use of the WEB.<br> Until 1995, CERN itself supervised and controlled the language standard. From that year on, the <a class="text-dark" href="https://www.w3.org/">W3C</a> (The World Wide Web Consortium), an entity that regulates Web standards, took over its supervision and control.</p><hr>
+          <h3 class="display-5 m-3 header">HTML Versions</h3>
+          <h4 class="display-7 m-3">Version 2.0 - 1995</h4>
+          <p class="m-3 text-light paragraphs">The first version that emerged after the creation of pure HTML was 2.0. Its objective was to formalize all the HTML features that were already used. Its appearance took place at the first worldwide event on the Web, known as the World Wide Web Conference.</p>
+          <h4 class="display-7 m-3">Version 3.2 - 1997</h4>
+          <p class="m-3 text-light paragraphs">In addition to correcting compatibility problems in version 2.0, this version of the language provided the creation of tables, applets and floating text around images.</p>
+          <h4 class="display-7 m-3">Version 4.01 - 1999</h4>
+          <p class="m-3 text-light paragraphs">Its feature was to provide backward compatibility, but also to add support for multimedia options, style sheets and improve programming practices.</p>
+          <h4 class="display-7 m-3">Version 5 - 2014 (current)</h4>
+          <p class="m-3 text-light paragraphs">The latest version of HTML was developed to enhance the World Wide Web experience for developers and end users.
+            HTML 5 provides high-level audio and video support that did not exist in previous versions.The main differences between HTML 5 and previous versions are:
+          <ul>
+            <li class="paragraphs text-light">HTML 5 uses a web database, while the other versions use the browser cache</li>
+            <li class="paragraphs text-light">HTML 5 is no longer based on SGML, so it can be improved and improved independently</li>
+            <li class="paragraphs text-light">This new version supports new types of form controls, such as date and time, e-mail, search, etc.</li>
+          </ul></p>
+          <h4 class="display-7 m-3 text-center">More About HTML History</h4>
+          <iframe class="video-center rounded shadow" width="500" height="275" src="https://www.youtube.com/embed/NzzGt7EmXVw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><hr>
+          <h4 class="display-6 m-3 header">Advantages</h4>
+          <p class="m-3 text-light paragraphs"><ul class="m-3 text-light paragraphs">
+            <li>HTML is easy to write and use.</li>
+            <li>Allows the use of templates, which facilitates the design of web pages.</li>
+            <li>Loose syntax.</li>
+            <li>Widely used.</li>
+            <li>Supported on almost all browsers, if not all browsers.</li>
+            <li>HTML can integrate easily with other languages.</li>
+            <li>Free - you don't need to buy any software.</li>
+            <li>Very useful for beginners in the field of web design.</li>
+          </ul></p>
+          <h4 class="display-6 m-3 header">Disadvantages</h4>
+          <p class="m-3 text-light paragraphs"><ul class="m-3 text-light paragraphs">
+            <li>It cannont produce dynamic output alone, as it's a static language.</li>
+            <li>The security features offered by HTML are limited.</li>
+            <li>You should keep track of obsolete tags and not use them.</li>
+            <li>It can only create static and simple pages.</li>
+            <li>Not centralized - each page has to be programmed separately.</li>
+            <li>Complexity - you need to write a lot of code to create a simple web page.</li>
+          </ul></p><hr>
+          <h4 class="display-6 m-3 header">The &lt!DOCTYPE&gt Declaration</h4>
+          <p class="m-3 text-light paragraphs">
+            The &lt!DOCTYPE&gt declaration represents the document type, and helps browsers to display web pages correctly. It must only appear once, at the top of the page (before any HTML tags).<br> The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.The &lt!DOCTYPE&gt declaration is not case sensitive.<br>The &lt!DOCTYPE&gt declaration for HTML5 is:
+            <pre class="text-center code"><code>&lt!DOCTYPE html&gt</code></pre></p><br>
+        </div>
+
+        <!--Right Part of website-->
+        <div class="col-sm-6">
+          <h2 class="display-4 m-3 header">Fundamentals</h2><hr>
+          <h3 class="display-5 m-3 header">Structure</h3>
+          <p class=" text-light m-3 paragraphs">An HTML file is rendered by the browser into a document with elements. Note the three elements in document: the <code class="code">&lthtml&gt</code> element, which encompasses the entire document; the <code class="code">&lthead&gt</code> element, which is currently empty and provides information about the document; and the <code class="code">&ltbody&gt</code> element, which contains the part of the document that the web browser is intended to render.</p><br>
+          <img class="img-center rounded img-hover" src="../images/html-structure.png" alt="html-structure">
+          <p class="text-light text-center paragraphs">Typical HTML Structure</p><hr>
+          <h3 class="display-5 m-3 header">Tags</h3>
+          <p class=" text-light m-3 paragraphs">A document in HTML consists of tags, with text in between them. There are opening and closing tags. Tags may not have a space between the opening angle bracket and the letters. It is customary when teaching a new language to begin with a simple program that simply outputs Hello, world! With HTML, it couldn’t be simpler. Open a new document in your editor and type in “Hello, world!”, as seen below:
+          <pre class="text-center code"><code>&lth1&gt Hello, world! &lt/h1&gt</code></pre>
+          </p><hr>
+          <h3 class="display-5 m-3 header">Most Common Tags</h3>
+          <!-- Table -->
+          <table class="table text-light">
+            <tr>
+              <th>Tags</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>&lta&gt</td>
+              <td>Defines a <a class="text-light" href="">hyperlink</a>.</td>
+            </tr>
+            <tr>
+              <td>&ltb&gt</td>
+              <td><b>Displays text in a bold style.</b>
+              </td>
+            </tr>
+            <tr>
+              <td>&ltbody&gt</td>
+              <td>Defines the document's body.</td>
+            </tr>
+            <tr>
+              <td>&ltbr&gt</td>
+              <td>Produces a single line break.</td>
+            </tr>
+            <tr>
+              <td>&ltbutton&gt</td>
+              <td>Creates a clickable button. <button>This is a button</button></td>
+            </tr>
+            <tr>
+              <td>&ltdiv&gt</td>
+              <td>Specifies a division or a section in a document.</td>
+            </tr>
+            <tr>
+              <td>&ltdl&gt</td>
+              <td>Defines a description list.</td>
+            </tr>
+            <tr>
+              <td>&ltdt&gt</td>
+              <td>Defines a term (an item) in a description list.</td>
+            </tr>
+            <tr>
+              <td>&ltem&gt</td>
+              <td><em>Defines emphasized text.</em></td>
+            </tr>
+            <tr>
+              <td>&ltembed&gt</td>
+              <td>Embeds external application, typically multimedia content.</td>
+            </tr>
+            <tr>
+              <td>&ltform&gt</td>
+              <td>Defines an HTML form for user input.</td>
+            </tr>
+            <tr>
+              <td>&lthead&gt</td>
+              <td>Defines the head portion of the document that contains information about the document.</td>
+            </tr>
+            <tr>
+              <td>&lth1&gt to &lth6&gt </td>
+              <td><h5>Defines HTML headings.</h5></td>
+            </tr>
+            <tr>
+              <td>&lthr&gt</td>
+              <td>Creates a horizontal line.</td>
+            </tr>
+            <tr>
+              <td>&lthtml&gt</td>
+              <td>Defines the root of an HTML document.</td>
+            </tr>
+            <tr>
+              <td>&lti&gt</td>
+              <td>Displays text in an italic style.</td>
+            </tr>
+            <tr>
+              <td>&ltimg&gt</td>
+              <td>Represents an image.</td>
+            </tr>
+            <tr>
+              <td>&ltinput&gt</td>
+              <td>Defines an input control.</td>
+            </tr>
+            <td>&ltli&gt</td>
+            <td>Defines a list item.</td>
+          </tr>
+            <tr>
+              <td>&ltlink&gt</td>
+              <td>Defines the relationship between the current document and an external resource.</td>
+            </tr>
+            <tr>
+              <td>&ltmeta&gt</td>
+              <td>Provides structured metadata about the document content.</td>
+            </tr>
+            <tr>
+              <td>&ltnav&gt</td>
+              <td>Defines a section of navigation links.</td>
+            </tr>
+            <tr>
+              <td>&ltol&gt</td>
+              <td>Defines an ordered list.</td>
+            </tr>
+            <tr>
+              <td>&ltp&gt</td>
+              <td>Defines a paragraph.</td>
+            </tr>
+            <tr>
+              <td>&ltq&gt</td>
+              <td><q>Defines a short inline quotation.</q></td>
+            </tr>
+            <tr>
+              <td>&ltscript&gt</td>
+              <td>Places script in document for client-side processing.</td>
+            </tr>
+            <tr>
+              <td>&ltsmall&gt</td>
+              <td><small>Displays text in a smaller size.</small></td>
+            </tr>
+            <tr>
+              <td>&ltstrong&gt</td>
+              <td><strong>Indicate strongly emphasized text.</strong></td>
+            </tr>
+            <tr>
+              <td>&ltstyle&gt</td>
+              <td>Insert style information (commonly <a class="text-light" href="../page3/css.html">CSS</a>) into the head of a document.</td>
+            </tr>
+            <tr>
+              <td>&lttable&gt</td>
+              <td>Defines a data table, such as this one.</td>
+            </tr>
+            <tr>
+              <td>&lttd&gt</td>
+              <td>Defines a cell in a table.</td>
+            </tr>
+            <tr>
+              <td>&ltth&gt</td>
+              <td>Defines a header cell in a table.</td>
+            </tr>
+            <tr>
+              <td>&lttitle&gt</td>
+              <td>Defines a title for the document.</td>
+            </tr>
+            <tr>
+              <td>&lttr&gt</td>
+              <td>Defines a row of cells in a table.</td>
+            </tr>
+            <tr>
+              <td>&ltu&gt</td>
+              <td><u>Displays text with an underline.</u></td>
+            </tr>
+            <tr>
+              <td>&ltul&gt</td>
+              <td>Defines an unordered list.</td>
+            </tr>
+            <tr>
+              <td>&ltvideo&gt</td>
+              <td>Embeds video content in an HTML document.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>  
+
+    <!--The following footer was sourced from https://mdbootstrap.com/docs/standard/navigation/footer/, with some alterations made to it-->
+    <!-- Footer -->
+    <footer class="gradient text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-dark" target="_blank" href="https://github.com/danrleimartins">Danrlei Martins</a>
+      </div>
+    </footer>
+
+    <!--Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!--Personal JS file-->
+    <script src="../script.js"></script>
+</body>
+</html>

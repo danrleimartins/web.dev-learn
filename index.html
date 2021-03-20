@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web.dev-learn</title>
+    <!--Favicon of website-->
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+    <!--Latest compiled and minified CSS from Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!--Personal CSS file-->
+    <link rel="stylesheet" href="./style.css">
+    <!--Font imported from google.fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--The following nav bar was sourced from https://getbootstrap.com/, with alterations made to it-->
+    <!-- Navigation Bar -->
+    <div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand nav-font nav-hover" href="index.html"><img src="./images/logo.png" alt="" width="55" height="55">web.dev-learn</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active nav-font nav-hover" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-font nav-hover" href="./page2/html.html">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-font nav-hover" href="./page3/css.html">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav-font nav-hover" href="./page4/js.html">JavaScript</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li class="nav-item dropdown name">
+                      <a class="nav-link dropdown-toggle nav-hover nav-font text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learn more about webdev</a>
+                      <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <li><h5 class="font-weight-bold nav-font text-light dropdown-header">Useful Resources</h5></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a target="_blank" class="dropdown-item text-light nav-font" href="https://www.w3schools.com/">W3 Schools</a></li>
+                        <li><a target="_blank" class="dropdown-item text-light nav-font" href="https://hackerthemes.com/bootstrap-cheatsheet/">BootStrap Cheatsheet</a></li>
+                        <li><a target="_blank" class="dropdown-item text-light nav-font" href="https://www.freepik.com/home">Free HD Vectors</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <!--The header was created using the container class from https://getbootstrap.com/.-->
+    <!--Header, Sub-Header, Image -->
+      <div class="container-fluid gradient text-center"><br><br><br><br>
+        <div class="row">
+          <div class="col-sm-7">
+            <h1 class="header m-5 display-3 ">Learn Web Development</h1><hr>
+            <h5 class="header m-5 display-6 text-light">Website designed for the CA1 of Client-Side Programming</h5>
+          </div>
+          <div class="col-sm-5 shadow rounded img-hover"><img id="img-head" src="./images/main-vec.png" alt="header image"></div>
+        </div>
+        <hr class="text-light">
+        <div class="row">
+            <div class="col-sm-4">
+              <div class="card text-center text-light bg-dark mb-3">
+                  <img class="card-img-top img-center img-fluid img-hover" src="./images/html.png" alt="html logo">
+                <div class="card-body">
+                  <h5 class="card-title">HTML</h5>
+                  <p class="nav-font card-text">Hypertext Markup Language</p>
+                  <a href="./page2/html.html" class="btn nav-font btn-primary">Learn about HTML</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card text-center text-light bg-dark mb-3">
+                <img class="card-img-top img-center img-hover img-fluid" src="./images/css.png" alt="css logo">
+                <div class="card-body">
+                  <h5 class="card-title">CSS</h5>
+                  <p class="card-text nav-font">Cascading Style Sheets</p>
+                  <a href="./page3/css.html" class="btn nav-font btn-primary">Learn about CSS</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card text-center text-light bg-dark mb-3">
+                    <img class="card-img-top img-center img-hover img-fluid" src="./images/javascript.png" alt="javascript logo">
+                  <div class="card-body">
+                    <h5 class="card-title">JS</h5>
+                    <p class="card-text nav-font">JavaScript </p>
+                    <a href="./page4/js.html" class="btn nav-font btn-primary">Learn about JS</a>
+                  </div>
+                </div>
+              </div><hr>
+          </div>
+    </div>
+
+    <!--The following footer was sourced from https://mdbootstrap.com/docs/standard/navigation/footer/, with some alterations made to it-->
+    <!-- Footer -->
+    <footer class="gradient text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Project Background</h5>
+            <p style="text-align: justify;">
+              Website designed as part of the CA1 of Client-Side Programming module, part of the Bachelor of Science (Honours) in Computing and IT from <a target="_blank" class="text-dark" href="https://www.cct.ie/">CCT College Dublin</a>. Bootstrap was the main CSS framework used for the development of this project.
+            </p>
+          </div>
+
+          <!--Grid column-->
+          <div class="col-lg-6 text-center col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Useful Links</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a target="_blank" href="https://docs.google.com/document/d/1a7XWHbWbbMsa6FjKuNH8glH7d8W8b_9HSV2xOPZY0UM/edit" class="text-dark">Project Brief & Instructions</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/danrleimartins/web.dev-lea" class="text-dark">GitHub Repository</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/danrleimartins" class="text-dark">GitHub Profile</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/in/danrleimartins/" class="text-dark">LinkedIn Profile</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-dark" target="_blank" href="https://github.com/danrleimartins">Danrlei Martins</a>
+      </div>
+    </footer>
+
+    <!--Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!--Personal JS file-->
+    <script src="./script.js"></script>
+</body>
+</html>

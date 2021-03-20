@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS</title>
+    <!--Favicon of website-->
+    <link rel="icon" type="image/png" href="../images/favicon.ico">
+    <!--Latest compiled and minified CSS from Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!--Personal CSS file-->
+    <link rel="stylesheet" href="../style.css">
+    <!--Font imported from google.fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--The following nav bar was sourced from https://getbootstrap.com/, with alterations made to it-->
+    <!-- Navigation Bar -->
+    <div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand nav-hover nav-font" href="../index.html"><img src="../images/logo.png" alt="" width="55" height="55">web.dev-learn</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link nav-font nav-hover" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-hover nav-font" href="../page2/html.html">HTML</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-hover active nav-font" href="../page3/css.html">CSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-font nav-hover" href="../page4/js.html">JavaScript</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="nav-item dropdown name">
+                    <a class="nav-link dropdown-toggle nav-hover nav-font text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learn more about webdev</a>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                      <li><h5 class="font-weight-bold nav-font text-light dropdown-header">Useful Resources</h5></li>
+                      <div class="dropdown-divider"></div>
+                      <li><a target="_blank" class="dropdown-item text-light nav-font" href="https://www.w3schools.com/">W3 Schools</a></li>
+                      <li><a target="_blank" class="dropdown-item text-light nav-font" href="https://hackerthemes.com/bootstrap-cheatsheet/">BootStrap Cheatsheet</a></li>
+                      <li><a target="_blank" class="dropdown-item text-light nav-font" href="https://www.freepik.com/home">Free HD Vectors</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <!--The header was created using the container class from https://getbootstrap.com/.-->
+    <!--Header, Sub-Header, Image -->
+    <div class="container-fluid gradient text-center"><br><br><br><br>
+        <h1 class="display-4 header">Cascading Style Sheets</h1>
+        <h4 class="header text-light">&lt the language for styling web pages &gt</h4>
+        <img class="img-hover vector" src="../images/css-vec.png" alt="html logo"><br><br>
+    </div>
+
+    <!--Body of website-->
+    <div class="container-fluid gradient">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="display-4 m-3 header ">What is CSS?</h2><hr>
+          <h3 class="display-5 m-3 header">Definition</h3>
+          <p class="m-3 text-light paragraphs">CSS is called Cascading Style Sheets, this language is used to style elements written in a markup language such as HTML. CSS separates the content from the visual representation of the website. Think about the decoration of your page. Using CSS it is possible to change the color of the text and the background, font and spacing between paragraphs. You can also create tables, use layout variations, adjust images for their respective screens, and so on. </p><hr>
+          <h3 class="display-5 m-3 header">Brief History</h3>
+          <p class="m-3 text-light paragraphs">When HTML was created, it was by no means intended to format information. As HTML became more popular and evolved, the mastery of controlling some appearances for the document was included in its qualities. This made the language very complex, more difficult to understand and maintain. Another problem was that browsers had differences in implementations, which made it difficult to view the sites, bringing less control over web browsing.<br><br>At that time the savior of the motherland appeared. Håkon Wium Lie, seeing all this difficulty, decided to create an easier way to format the information. That's when he proposed the creation of CSS or Cascading Style Sheets ... That was the year of 1994. The two then worked together at the beginning of the development of the CSS. The result appeared soon, in 1996, they launched the official recommendation by the W3C of CSS Level 1 (CSS 1).</p><hr>
+          <h3 class="display-5 m-3 header">CSS Versions</h3>
+          <h4 class="display-7 m-3">Version 1 - 1996</h4>
+          <p class="m-3 text-light paragraphs">The first CSS specification to become an official W3C Recommendation is CSS level 1, published on December 17, 1996. Håkon Wium Lie and Bert Bos are credited as the original developers.<br><br> It included properties for adding font properties such as typeface and emphasis color of text, backgrounds, and other elements text attributes such as spacing between words, letters, and lines of text. Unfortunately, lack of dependable web browser support prevented the popularity of CSS Level 1 for several years.</p><hr>
+          <h4 class="display-7 m-3">Version 2 - 1998</h4>
+          <p class="m-3 text-light paragraphs">CSS level 2 (CSS2) specification was developed by the W3C and published as a recommendation in 1998. Its most notably added properties for positioning that allowed CSS to be used for page layout. It also introduced styles for other media types and more sophisticated methods for selecting elements for styling.</p><hr>
+          <h4 class="display-7 m-3">Version 3 - 1999 (current)</h4>
+          <p class="m-3 text-light paragraphs">The earliest CSS level 3 (CSS3) drafts were published in 1999. CSS3 adds presentation-style properties, allowing you to effectively build presentations from Web documents. CSS level 3 is divided into several separate documents called modules. Due to the modularization, different modules have different stability and statuses.<br><br>
+          There is no single CSS4 specification and there is no standard which named as CSS4. But a few level 4 modules exist such as Image Values, Backgrounds & Borders, or Selectors etc., which build on the functionality of a preceding level 3 module. The level 4 modules can collectively be referred to as CSS level 4. There is only CSS standard, and each module can level up independently.
+          </p><br>
+          <img class="w-75 img-hover img-center" src="../images/css-versions.png" alt="css versions"><br>
+          <p class="text-light text-center">CSS Modules defined with CSS3</p>
+          <hr>
+          <h4 class="display-6 m-3 header">Why use CSS?</h4>
+          <p class="m-3 text-light paragraphs">
+            The difference between a website that implements CSS and one that does not use it is huge and notable. You may have seen a website that doesn't load completely or has a white background with blue and black text. This means that the CSS part of the website has not been loaded correctly or does not exist.
+            And this is what an HTML-only site looks like. I believe you will agree with me that this is not very beautiful, right?<br><br>
+            Before using CSS, all styling had to be included in the HTML file. This means that you should describe the entire background, font colors, alignments, etc. separately.
+            But CSS allows you to style everything in a different file, thus creating the style separately. And, later, integrate the CSS file at the top of the HTML file. This keeps the HTML clean and easy to maintain.<br><br>
+            In short, with CSS you no longer need to repeatedly write what the individual elements look like. This saves time, shortens the code and decreases the chance of errors.
+            CSS allows you to have multiple styles on an HTML page, making the customization possibilities almost endless. Nowadays, this is becoming more of a necessity than a simple resource.
+          </p><hr>
+          <h4 class="display-6 m-3 header">CSS Syntax</h4>
+          <p class="text-light m-3 paragraphs">The basic building blocks of CSS Syntax are:
+            <ul class="text-light m-3 paragraphs">
+              <li>The <u>property</u> which is an identifier, that is a human-readable name, that defines which feature is considered.</li>
+              <li>The <u>value</u> which describe how the feature must be handled by the engine. Each <u>property</u> has a set of <u>values</u>.</li>
+            </ul>
+          </p><hr>
+          <h4 class="display-6 m-3 header">CSS Declarations</h4>
+          <p class="text-light m-3 paragraphs">Setting CSS properties to specific values is the core function of the CSS language. A property and value pair is called a declaration, and any CSS engine calculates which declarations apply to every single element of a page in order to appropriately lay it out, and to style it.
+          <img class="w-75 img-hover rounded shadow img-center" src="../images/css-syntax.png" alt="css versions">
+          <p class="text-light text-center">Example of a CSS Declaration</p><hr>
+          <h4 class="display-6 m-3 header">Basic CSS Selectors</h4>
+          <p class="text-light m-3 paragraphs">CSS selectors define the elements to which a set of CSS rules apply. Here are the most important ones:
+            <ul class="text-light m-3 paragraphs">
+              <li>The <u>universal selector</u> which selects all elements has the following syntax: * {...}</li>
+              <li>The <u>element selector</u> which selects all elements based on the element name: p {...}</li>
+              <li>The <u>id selector</u> uses the id attribute of an element to select only that specific one. The id on an element is unique within a page, to select an id, use the following syntax: # idname {...}</li>
+              <li>The <u>class selector</u> selects HTML elements with a specific class atribute. To select elements with a specific class, use the following syntax:<br> . classname {...} </li>
+            </ul>
+          </p>
+
+        </div>
+
+        <!--Right Part of website-->
+        <div class="col-sm-6">
+          <h2 class="display-4 m-3 header">Types of CSS</h2><hr>
+          <h3 class="display-5 m-3 header">Inline CSS</h3>
+          <p class="text-light m-3 paragraphs">Inline CSS is used for a specific HTML   tag. The &ltstyle&gt attribute is used to format a specific HTML tag. Using CSS in this way is not recommended, as each HTML tag needs to be named individually. Managing your website can become very difficult if you only use inline CSS. However, it can be useful in some situations.<br><br> For example, in cases where you don't have access to CSS files or need to apply style to a single element. An example of an HTML heading tag with inline CSS would look like this:</p>
+          <img class="img-center w-75 rounded shadow img-hover" src="../images/inline-css.png" alt="html-structure"><br>
+          <p class="text-light text-center paragraphs">Typical Inline CSS Structure</p>
+          <h3 class=" display-6 header m-3">Advantages</h3>
+          <ul class="text-light m-3 paragraphs">
+            <li>Useful if you want to test and preview changes.</li>
+            <li>Useful for quick fixes.</li>
+            <li>Reduces HTTP requests.</li>
+          </ul>
+          <h3 class=" display-6 header m-3">Disadvantages</h3>
+          <ul class="text-light m-3 paragraphs">
+            <li>Inline CSS must be applied to each element.</li>
+          </ul><hr>
+          <h3 class="display-5 m-3 header">Internal CSS</h3>
+            <p class=" text-light m-3 paragraphs">Internal CSS code is placed in the &lthead&gt section of a given html page. Classes and IDs can be used to refer to CSS code, but they are only active on that specific page. CSS styles incorporated in this way are downloaded each time the page loads so that it can increase the loading speed. <br><br>However, there are some cases when the internal style page is useful. An example would be to send someone a page template - as everything is on a page, it is much easier to see a preview. The internal CSS is placed between &ltstyle&gt &lt/style&gt tags. An example of an internal style page:<br></p>
+            <img class="img-center w-75 rounded shadow nav-hover" src="https://i.stack.imgur.com/K59EF.gif" alt="css-structure"><br>
+            <p class="text-light text-center paragraphs">Typical Internal CSS Structure</p>
+            <h3 class=" display-6 header m-3">Advantages</h3>
+              <ul class="text-light m-3 paragraphs">
+                <li>Only one page is affected by the style page.</li>
+                <li>Classes and IDs can be used by the internal stylesheet.</li>
+                <li>There is no need to upload multiple files. HTML and CSS can be in the same file.</li>
+              </ul>
+              <h3 class=" display-6 header m-3">Disadvantages</h3>
+              <ul class="text-light m-3 paragraphs">
+                <li>Increased page load time.</li>
+                <li>It affects only one page - it is not useful if you want to use the same CSS in multiple documents.</li>
+              </ul><hr>
+              <h3 class="display-5 m-3 header">External Style Sheet</h3>
+              <p class=" text-light m-3 paragraphs">Probably the most convenient way to add CSS to your website is to link it to an external .css file. That way, any changes made to an external CSS file will be reflected on your website globally. A reference to an external CSS file is placed in the &lthead&gt section of the page.
+                <pre class="code"><code>&lthead&gt<br>&ltlink rel="stylesheet" type="text/css" href="style.css" /&gt<br>&lt/head&gt</code></pre>
+              </p>
+              <p class=" text-light m-3 paragraphs">In the meantime, the style.css file contains all the style rules (selectors and declarations). For example:<br><br>
+              <img class="img-center w-75 rounded shadow nav-hover" src="../images/css-snippet.png" alt="css-structure">
+              <p class="text-light text-center paragraphs">Typical External CSS Structure</p>
+              <h3 class=" display-6 header m-3">Advantages</h3>
+                <ul class="text-light m-3 paragraphs">
+                  <li>Smaller size of HTML pages and cleaner structure.</li>
+                  <li>Faster loading speed.</li>
+                  <li>The same .css file can be used on multiple pages.</li>
+                </ul>
+                <h3 class=" display-6 header m-3">Disadvantages</h3>
+                <ul class="text-light m-3 paragraphs">
+                  <li>Until the external .css file is loaded, the page may not be rendered correctly.</li>
+                </ul><hr>
+                <h3 class="display-5 m-3 header">Useful CSS Properties</h3>
+
+              <!-- Table -->
+              <table class="table text-light">
+                <tr>
+                  <th>Property</th>
+                  <th>Description</th>
+                  <th>Values</th>
+                </tr>
+                <tr>
+                  <td>color</td>
+                  <td>Element color.</td>
+                  <td>{black, white, ...}</td>
+                </tr>
+                <tr>
+                  <td>background-color</td>
+                  <td>Background color.</td>
+                  <td>{black, white, ...}</td>
+                </tr>
+                <tr>
+                  <td>background-image</td>
+                  <td>Sets the background image.</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>display</td>
+                  <td>Display behaviour.</td>
+                  <td>{block, inline-block, inline, none}</td>
+                </tr>
+                <tr>
+                  <td>width</td>
+                  <td>Element width.</td>
+                  <td>{10px, 50%, ...}</td>
+                </tr>
+                <tr>
+                  <td>height</td>
+                  <td>Element height.</td>
+                  <td>{10px, 50%, ...}</td>
+                </tr>
+                <tr>
+                  <td>min-width</td>
+                  <td>Minimum width.</td>
+                  <td>{10px, 50%, ...}</td>
+                </tr>
+                <tr>
+                  <td>min-height</td>
+                  <td>Minimum height.</td>
+                  <td>{10px, 50%, ...}</td>
+                </tr>
+                <tr>
+                  <td>max-width</td>
+                  <td>Maximum width.</td>
+                  <td>{10px, 50%, ...}</td>
+                </tr>
+                <tr>
+                  <td>max-height</td>
+                  <td>Maximum height.</td>
+                  <td>{10px, 50%, ...}</td>
+                </tr>
+                <tr>
+                  <td>margin</td>
+                  <td>Outter margins property.</td>
+                  <td>{10px, 50%, ...}</td>
+                </tr>
+                <tr>
+                  <td>padding</td>
+                  <td>Inner margin property.</td>
+                  <td>{10px, 50%, ...}</td>
+                </tr>
+                <tr>
+                  <td>border</td>
+                  <td>Border property.</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>border-color</td>
+                  <td>Border color.</td>
+                  <td>{black, white, ...}</td>
+                </tr>
+                <tr>
+                  <td>border-width</td>
+                  <td>Border width.</td>
+                  <td>{10px, 50%, ...}</td>
+                </tr>
+                <tr>
+                  <td>border-style</td>
+                  <td>Border style.</td>
+                  <td>{none, solid, dotted, inset, dashed solid, ...}</td>
+                </tr>
+                <tr>
+                  <td>border-radius</td>
+                  <td>Border radius.</td>
+                  <td>{50deg, ..}</td>
+                </tr>
+                <tr>
+                  <td>font</td>
+                  <td>Font properties.</td>
+                  <td></td>
+                </tr>
+                <td>font-family</td>
+                <td>Defines the font.</td>
+                <td>{sans-serif, ...}</td>
+              </tr>
+                <tr>
+                  <td>font-style</td>
+                  <td>Font Style</td>
+                  <td>{normal, italic, oblique}</td>
+                </tr>
+                <tr>
+                  <td>font-weight</td>
+                  <td>Thickness of the font.</td>
+                  <td>{normal, bold, lighter, bolder}</td>
+                </tr>
+                <tr>
+                  <td>position</td>
+                  <td>Type of positioning used for an element.</td>
+                  <td>{static, relative, absolute, fixed, sticky}</td>
+                </tr>
+                <tr>
+                  <td>z-index</td>
+                  <td>Sets the order of overlapping elements.</td>
+                  <td>{auto, -1, 0, 1, 2, 3, ...}</td>
+                </tr>
+        </table>
+        </div>
+      </div>
+    </div>  
+
+    <!--The following footer was sourced from https://mdbootstrap.com/docs/standard/navigation/footer/, with some alterations made to it-->
+    <!-- Footer -->
+    <footer class="gradient text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-dark" target="_blank" href="https://github.com/danrleimartins">Danrlei Martins</a>
+      </div>
+    </footer>    
+
+    <!--Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!--Personal JS file-->
+    <script src="/script.js"></script>
+</body>
+</html>
